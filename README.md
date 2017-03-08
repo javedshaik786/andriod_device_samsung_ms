@@ -1,6 +1,4 @@
-# andriod_device_samsung_tolte
+# andriod_device_samsung_ms013g
 
 Supported Variants:
-- GT-N7105 (EUR)
-  - SGH-I317 (AT&T)
-  - SGH-T889 (TMO)
+- GT-7102 (INR)
