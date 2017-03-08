@@ -1,11 +1,11 @@
 #
-# system.prop for t0lte
+# system.prop for ms013g
 #
 
 rild.libpath=/system/lib/libsec-ril.so
 ro.telephony.default_network=9
-telephony.lteOnGsmDevice=1
-telephony.lteOnCdmaDevice=0
+telephony.GsmOnGsmDevice=1
+telephony.GsmOnCdmaDevice=0
 ro.ril.telephony.mqanelements=6
 ro.hdcp2.rx=tz
 ro.sf.lcd_density=320
