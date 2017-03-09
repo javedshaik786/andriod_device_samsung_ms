@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/t0lte
+LOCAL_PATH := device/samsung/ms013g
 
 # Overlay
 ifeq ($(TARGET_VOICE_TECH), cdma)
@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Include common makefile
-$(call inherit-product, vendor/samsung/t0lte/t0lte-common-vendor.mk)
+$(call inherit-product, vendor/samsung/ms013g/ms013g-common-vendor.mk)
 
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 $(call inherit-product, device/samsung/smdk4412-qcom-common/common.mk)
