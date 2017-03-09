@@ -17,13 +17,13 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
-LOCAL_PATH := device/samsung/t0lte
+LOCAL_PATH := device/samsung/ms013g
 
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_t0lte.txt
+BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_ms013g.txt
 
 # Camera
 BOARD_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
@@ -36,13 +36,13 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 ifeq ($(TARGET_VOICE_TECH), cdma)
-TARGET_KERNEL_CONFIG := lineageos_t0ltecdma_defconfig
+TARGET_KERNEL_CONFIG := lineageos_ms013gcdma_defconfig
 else
-TARGET_KERNEL_CONFIG := lineageos_t0lte_defconfig
+TARGET_KERNEL_CONFIG := lineageos_ms013g_defconfig
 endif
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/t0lte/rootdir/fstab.smdk4x12
+TARGET_RECOVERY_FSTAB := device/samsung/ms013g/rootdir/fstab.smdk4x12
 TARGET_RECOVERY_DENSITY := mdpi
 RECOVERY_FSTAB_VERSION := 2
 
@@ -61,10 +61,10 @@ PRODUCT_COPY_FILES += \
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := mdm9x35
-BOARD_RIL_CLASS := ../../../device/samsung/t0lte/ril
+BOARD_RIL_CLASS := ../../../device/samsung/ms013g/ril
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := GT-N7105,GT-N7105T,SGH-I317,SGH-I317M,SGH-T889,t0lte,t0lteatt,t0ltecan,t0ltedv,t0ltektt,t0lteskt,t0ltetmo,t0ltevl,t0ltexx
+TARGET_OTA_ASSERT_DEVICE := GT-ms013g
 
 # Selinux
-BOARD_SEPOLICY_DIRS += device/samsung/t0lte/selinux
+BOARD_SEPOLICY_DIRS += device/samsung/ms013g/selinux
